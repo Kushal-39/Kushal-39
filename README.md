@@ -1,173 +1,264 @@
+
 <div align="center">
 
-# KUSHAL ARORA
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&color=0B0F14&height=110&section=header&text=KUSHAL%20ARORA&fontSize=42&fontColor=F8FAFC&fontAlignY=44&desc=cybersecurity%20%E2%80%A2%20devsecops%20%E2%80%A2%20systems&descSize=14&descColor=5EEAD4&descAlignY=72"
+  width="100%"
+/>
 
-### cybersecurity · devsecops · systems
+<br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=2500&pause=1200&color=5EEAD4&background=00000000&center=true&vCenter=true&width=600&lines=%24+whoami;kushal-39;%24+cat+motto.txt;break+%E2%86%92+understand+%E2%86%92+secure;%24+precept+scan+.%2Finfra;verdict%3A+BLOCKED.+you%E2%80%99re+welcome." width="600" alt="$ whoami → kushal-39" />
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=2400&pause=1100&color=5EEAD4&center=true&vCenter=true&width=720&height=35&lines=%24+whoami+%3E+kushal-39;%24+focus+%3E+security+%2B+infrastructure;%24+pipeline+%3E+build+%2F+scan+%2F+ship;%24+status+%3E+probably+fine"
+  alt="terminal"
+/>
 
-*break → understand → secure.*
+<br>
+
+<img src="https://img.shields.io/badge/BUILD-Go%20%7C%20Python%20%7C%20Bash-2563EB?style=for-the-badge&labelColor=111827" />
+<img src="https://img.shields.io/badge/SECURE-OPA%20%7C%20IaC%20%7C%20SAST-8B5CF6?style=for-the-badge&labelColor=111827" />
+<img src="https://img.shields.io/badge/SHIP-CI%2FCD%20%7C%20Docker%20%7C%20Actions-14B8A6?style=for-the-badge&labelColor=111827" />
+<img src="https://img.shields.io/badge/OBSERVE-Wazuh%20%7C%20ELK%20%7C%20Wireshark-F59E0B?style=for-the-badge&labelColor=111827" />
+
+<br><br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Kushal--39-111827?style=flat-square&logo=github&logoColor=F8FAFC)](https://github.com/Kushal-39)
+[![Email](https://img.shields.io/badge/email-arorakushal39%40gmail.com-111827?style=flat-square&logo=gmail&logoColor=5EEAD4)](mailto:arorakushal39@gmail.com)
 
 </div>
 
 ---
 
-### `$ neofetch`
-
-```
-$ neofetch --config ~/.kushal/fetch.conf
-
-  user ......... kushal
-  handle ....... kushal-39
-  domain ....... security / infrastructure
-  writes in .... go · python · bash
-  currently .... making pipelines paranoid
-  threat ....... unnecessary complexity
-  uptime ....... questionable
-  status ....... ● operational (mostly)
-```
-
----
-
-### `~/likes`
-
-*i like:*
-
-→ building security tools nobody asked for
-→ breaking protocols to understand them
-→ automating the boring security checks
-→ giving CI pipelines trust issues
-→ reading logs at unreasonable hours
-→ figuring out why it broke
-→ occasionally fixing it
-
----
-
-### `~/pipeline`
-
-*ci/cd, except the pipeline has trust issues.*
-
-```
-        ┌───────┐
-        │ code  │
-        └───┬───┘
-            ▼
-        ┌───────┐
-        │ build │
-        └───┬───┘
-            ▼
-        ┌───────┐
-        │ scan  │  ← precept lives here
-        └───┬───┘
-            ▼
-        ┌───────┐
-        │ gate  │  ← trust issues live here
-        └───┬───┘
-            ▼
-       ┌─────────┐
-       │ ship ✓  │
-       └─────────┘
-```
-
----
-
-### `~/selected-projects`
-
-#### · [precept](https://github.com/Kushal-39/Precept)
-
-**an IaC security scanner that judges your infrastructure before production does.**
-
-`terraform · kubernetes · iam · cloudtrail` → normalized into one model
-`deterministic risk engine` → CRITICAL / HIGH / MEDIUM / LOW, scored 1–100
-`cobra cli` → threshold exit codes, so the pipeline can say no
-`policy-as-code` → OPA/Rego, without touching the scanner core
-
-```
-iac ──▶ scan ──▶ risk ──▶ policy ──▶ ship / block
-```
-
-```
-// the gate, doing its job
-$ precept scan ./infra --threshold 70
-
-  parser   ✓  terraform · k8s · iam · cloudtrail → one model
-  risk     ✗  privilege-escalation chain (iam)
-  risk     ✗  0.0.0.0/0 ingress (network)
-  risk     ✗  unencrypted bucket (storage)
-  gate     ■  BLOCKED · exit 1
-
-  production sends its regards.
-```
-
-#### · [stratum](https://github.com/Kushal-39/Stratum)
-
-**a BitTorrent client. written in go. it works.** *(mostly.)*
-
-full peer wire protocol, by hand — no libtorrent, no shortcuts.
-rarest-first scheduling · per-piece SHA-1 · 1-strike bad-peer bans.
-Kademlia DHT for when trackers lie to you.
-a VirusTotal plugin, because downloading files wasn't paranoid enough —
-every finished piece gets malware-scanned via hash lookup.
-path-traversal hardening · bearer-token local API · a TUI, because restraint is for other people.
-
-*also lying around, weekend-sized:* [PyPot](https://github.com/Kushal-39/PyPot---Python-based-honeypot) (honeypot) · [PyWall](https://github.com/Kushal-39/PyWall---basic-python-firewall) (packet filter) · [PyFuzz](https://github.com/Kushal-39/PyFuzz----simple-python-api-fuzzer) (api fuzzer)
-
----
-
-### `~/stack`
-
-**build**
-<img src="https://skillicons.dev/icons?i=go,python,bash&theme=dark" alt="go · python · bash" />
-
-**ship**
-<img src="https://skillicons.dev/icons?i=terraform,kubernetes,docker,githubactions&theme=dark" alt="terraform · kubernetes · docker · github actions" />
-
-**secure**
-`OPA/Rego` `gosec` `burp suite` `owasp zap` `wireshark` `yara`
-
-**observe**
-`wazuh` `elk`
-
----
-
-### `~/blue-team`
-
-```
-┌─ defensive security ───────────┐
-│ holmes ctf · blue   top 1.2%   │
-│   86th of 7085 teams           │
-│ tryhackme · soc l1  top 2%     │
-└────────────────────────────────┘
-```
-
-*malware analysis · network forensics · log correlation*
-
----
-
-### `~/activity`
-
-<table>
-  <tr>
-    <td width="50%"><img width="100%" src="https://github-readme-stats.vercel.app/api?username=Kushal-39&show_icons=true&title_color=5eead4&text_color=94a3b8&icon_color=5eead4&border_color=1e293b&bg_color=0d1117" alt="github stats" /></td>
-    <td width="50%"><img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kushal-39&layout=compact&langs_count=5&title_color=5eead4&text_color=94a3b8&border_color=1e293b&bg_color=0d1117" alt="top languages" /></td>
-  </tr>
-</table>
-
----
-
-### `$ ./today --summary`
-
-```
-  caffeine ..... stable
-  bugs ......... a few
-  incidents .... zero (today)
-  sleep ........ backlog
-```
+## `~/status`
 
 <div align="center">
 
-say hi → [arorakushal39@gmail.com](mailto:arorakushal39@gmail.com) · [github](https://github.com/Kushal-39)
+<img src="https://img.shields.io/badge/FOCUS-Security%20Engineering-8B5CF6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/MODE-DevSecOps-14B8A6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/STATE-Building-F59E0B?style=flat-square&labelColor=111827" />
 
-*welcome to my corner of github — things are probably being scanned.*
+</div>
+
+<br>
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  handle       kushal-39                                      │
+│  currently    building security tooling                      │
+│  interested   infrastructure · automation · defense          │
+│  writes in    go · python · bash                             │
+│  philosophy   build → secure → ship → repeat                 │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+I like the part where software, infrastructure, and security start getting tangled together.
+
+---
+
+## `~/devsecops`
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/CODE-2563EB?style=for-the-badge&labelColor=0B0F14" />
+&nbsp;→&nbsp;
+<img src="https://img.shields.io/badge/BUILD-3B82F6?style=for-the-badge&labelColor=0B0F14" />
+&nbsp;→&nbsp;
+<img src="https://img.shields.io/badge/TEST-6366F1?style=for-the-badge&labelColor=0B0F14" />
+&nbsp;→&nbsp;
+<img src="https://img.shields.io/badge/SCAN-8B5CF6?style=for-the-badge&labelColor=0B0F14" />
+&nbsp;→&nbsp;
+<img src="https://img.shields.io/badge/POLICY-EC4899?style=for-the-badge&labelColor=0B0F14" />
+&nbsp;→&nbsp;
+<img src="https://img.shields.io/badge/SHIP-14B8A6?style=for-the-badge&labelColor=0B0F14" />
+
+<br><br>
+
+```text
+                    ┌─────────────┐
+                    │ POLICY GATE │
+                    └──────┬──────┘
+                    │
+                    ┌─────────────┴─────────────┐
+                    ▼                           ▼
+               ┌─────────┐                 ┌─────────┐
+               │ SHIP ✓  │                 │ BLOCK ✕ │
+               └─────────┘                 └─────────┘
+```
+
+<sub>security checks belong in the path to production, not in a forgotten wiki page.</sub>
+
+</div>
+
+---
+
+## `~/projects`
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### <span style="color:#14B8A6">Precept</span>
+
+[**IaC security scanner + CI/CD gate**](https://github.com/Kushal-39/Precept)
+
+```text
+Terraform ─┐
+Kubernetes ├─→ scan → risk → policy
+IAM        ┘              ↓
+                       ship / block
+```
+
+Built in Go to turn infrastructure security checks into an actual pipeline decision.
+
+`Go` `Terraform` `Kubernetes` `GitHub Actions` `OPA/Rego`
+
+<br>
+
+<img src="https://img.shields.io/badge/PRIVILEGE%20ESCALATION-DETECTED-EF4444?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/POLICY%20GATE-ENABLED-14B8A6?style=flat-square&labelColor=111827" />
+
+</td>
+
+<td width="50%" valign="top">
+
+### <span style="color:#8B5CF6">Stratum</span>
+
+[**A BitTorrent client in Go**](https://github.com/Kushal-39/Stratum)
+
+Started with:
+
+`peer protocol` · `concurrency` · `Kademlia`
+
+Then it acquired:
+
+`SHA-1 verification` · `malicious-peer handling` · `path traversal protection` · `VirusTotal lookups`
+
+Because apparently a torrent client needed a threat model.
+
+`Go` `Networking` `Concurrency` `Security`
+
+<br>
+
+<img src="https://img.shields.io/badge/PEERS-UNTRUSTED-8B5CF6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/FILES-SCANNED-F59E0B?style=flat-square&labelColor=111827" />
+
+</td>
+
+</tr>
+</table>
+
+### `the smaller experiments`
+
+[**PyPot**](https://github.com/Kushal-39/PyPot---Python-based-honeypot)
+&nbsp;·&nbsp;
+[**PyWall**](https://github.com/Kushal-39/PyWall---basic-python-firewall)
+&nbsp;·&nbsp;
+[**PyFuzz**](https://github.com/Kushal-39/PyFuzz----simple-python-api-fuzzer)
+
+<sub>small projects, unnecessarily strong opinions.</sub>
+
+---
+
+## `~/toolbox`
+
+<div align="center">
+
+### build
+
+<img src="https://skillicons.dev/icons?i=go,python,bash&theme=dark" alt="Go Python Bash" />
+
+<br><br>
+
+### ship
+
+<img src="https://skillicons.dev/icons?i=docker,terraform,kubernetes,githubactions&theme=dark" alt="Docker Terraform Kubernetes GitHub Actions" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/OPA%20%2F%20REGO-8B5CF6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/GOSEC-EF4444?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/BURP%20SUITE-F97316?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/OWASP%20ZAP-DC2626?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/WIRESHARK-2563EB?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/YARA-F59E0B?style=flat-square&labelColor=111827" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/WAZUH-14B8A6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/ELK-3B82F6?style=flat-square&labelColor=111827" />
+
+</div>
+
+---
+
+## `~/defense`
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/HOLMES%20CTF-TOP%201.2%25-8B5CF6?style=for-the-badge&labelColor=111827" />
+<img src="https://img.shields.io/badge/THM%20SOC%20LEVEL%201-TOP%202%25-14B8A6?style=for-the-badge&labelColor=111827" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/MALWARE%20ANALYSIS-111827?style=flat-square&logoColor=F59E0B" />
+<img src="https://img.shields.io/badge/NETWORK%20FORENSICS-111827?style=flat-square&logoColor=3B82F6" />
+<img src="https://img.shields.io/badge/LOG%20CORRELATION-111827?style=flat-square&logoColor=14B8A6" />
+
+</div>
+
+---
+
+## `~/activity`
+
+<div align="center">
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=Kushal-39&show_icons=true&hide_border=true&bg_color=0D1117&title_color=5EEAD4&text_color=CBD5E1&icon_color=8B5CF6"
+  height="165"
+  alt="GitHub stats"
+/>
+
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kushal-39&layout=compact&langs_count=5&hide_border=true&bg_color=0D1117&title_color=5EEAD4&text_color=CBD5E1"
+  height="165"
+  alt="Top languages"
+/>
+
+<br><br>
+
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=Kushal-39&bg_color=0D1117&color=5EEAD4&line=8B5CF6&point=F59E0B&area=true&hide_border=true"
+  width="94%"
+  alt="Contribution graph"
+/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/BUILD-✓-2563EB?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/TEST-✓-6366F1?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/SCAN-✓-8B5CF6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/DEPLOY-✓-14B8A6?style=flat-square&labelColor=111827" />
+<img src="https://img.shields.io/badge/SLEEP-?-F59E0B?style=flat-square&labelColor=111827" />
+
+<br><br>
+
+**thanks for stopping by.**
+
+<br>
+
+`probably scanning something`
+
+<br>
+
+[GitHub](https://github.com/Kushal-39)
+&nbsp;·&nbsp;
+[arorakushal39@gmail.com](mailto:arorakushal39@gmail.com)
 
 </div>
